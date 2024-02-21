@@ -1,0 +1,56 @@
+{
+  "phones": [
+    {
+      "id": 1,
+      "productName": "Samsung Galaxy S21",
+      "provider": "Samsung",
+      "price": 1099,
+      "description": "A large phone with one of the best screens"
+    },
+    {
+      "id": 2,
+      "productName": "VIVO Y72",
+      "provider": "Vivo Communication Technology",
+      "price": 320,
+      "description": "Good camera"
+    },
+    {
+      "id": 3,
+      "productName": "iPhone 16",
+      "provider": "Apple",
+      "price": 2000,
+      "description": "AI integrated"
+    }
+  ],
+  "shipping": [
+    {
+      "type": "Overnight",
+      "price": 25.99
+    },
+    {
+      "type": "2-Day",
+      "price": 9.99
+    },
+    {
+      "type": "Postal",
+      "price": 2.99
+    }
+  ],
+  "providers": [
+    {
+      "name": "Samsung",
+      "nif": "1234567",
+      "place": "Street James Bond 1, 29003"
+    },
+    {
+      "name": "Vivo Communication Technology",
+      "nif": "2468135",
+      "place": "Street James Bond 1, 29003"
+    },
+    {
+      "name": "Apple",
+      "nif": "7654321",
+      "place": "Street Marlo, 87"
+    }
+  ]
+}

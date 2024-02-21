@@ -1,0 +1,34 @@
+<h1 class="text-7xl text-center font-bold">Cart shop</h1>
+<ng-template [ngIf]="cart" [ngIfElse]="empty">
+    <div *ngIf="cart" id="cart">
+        <table class="text-4xl">
+            <thead class="bg-red-400">
+                <tr>
+                    <td>Name</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let phone of cart |async">
+                    <td>{{phone.productName}}</td>
+                    <td>{{phone.price}}€ </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form class="p-5" [formGroup]="form" (ngSubmit)="purchase()">
+        <label class="text-start text-2xl" for="name" >Name</label>
+        <input class="border-b-2 border-b-red-400" type="text" name="" formControlName="name" id="">
+        <label  class="text-start text-2xl" for="address">Address</label>
+        <input class="border-b-2 border-b-red-400" type="text" formControlName="address" name="" id="">
+        <div id="buy" class="p-10"> 
+            <input  type="submit" value="Purchase" class="bg-red-400 text-4xl w-52 p-5 rounded-md">
+        </div>
+    </form>
+</ng-template>
+<ng-template #empty class="p-20 bg-fuchsia-200">
+    <div id="emptyCart">
+        <h1 class="text-9xl">IS EMPTY</h1>
+    </div>
+    
+</ng-template>

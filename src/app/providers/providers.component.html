@@ -1,0 +1,20 @@
+<h1 class="text-7xl text-center font-bold">Providers</h1>
+<div id="providers">
+    @for(provider of providers | async ;track provider.id){
+        <div class="provider text-center border-solid border-2 rounded-md">
+            <div class="image">
+                <img
+                  src="../../assets/img/iconos-finanzas-09.png"
+                  alt=""
+                  width="300px"
+                />
+              </div>
+              <h1 class="text-4xl">{{provider.name}}</h1>
+              <div class="buttons">
+                <button [routerLink]="['/provider',provider.name]" class="bg-red-400 text-3xl hover:text-white border-black">
+                    Check
+                  </button>
+              </div>
+        </div>
+    }
+</div>

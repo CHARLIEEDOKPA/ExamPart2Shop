@@ -1,0 +1,29 @@
+<div class="h-40 p-10 bg-red-500" id="header">
+  <h1 class="text-white text-6xl text-center">SHOPPING LIST</h1>
+</div>
+<div class="h-20 p-10">
+  <div id="links">
+    <a routerLink="./store"
+    routerActiveLink = "active-link"
+      ><div class="link w-10 h-10 bg-red-400 border-3 border-black">
+        <h3 class="text-weig">Store</h3>
+        <i class="fa-solid fa-store"></i></div
+    ></a>
+
+    <a routerLink="./cart"
+      ><div class="link w-10 h-10 bg-red-400 border-3 border-black">
+        <h3 class="text-weig">Shop Cart</h3>
+        <br>
+        <div id="numItems" class="rounded-md bg-white w-4 text-center ml-2">
+          <p>{{items.length}}</p>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i></div
+    ></a>
+
+    <a routerLink="./shipping"
+      ><div class="link w-10 h-10 bg-red-400 border-3 border-black">
+        <h3 class="text-weig">Shipping</h3>
+        <i class="fas fa-shipping-fast"></i></div
+    ></a>
+  </div>
+</div>

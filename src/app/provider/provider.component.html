@@ -1,0 +1,18 @@
+<div *ngIf="provider$ | async as provider">
+  <div id="container">
+    <div id="image" class="border-2">
+      <img width="500" src="../../assets/img/iconos-finanzas-09.png" alt="" />
+    </div>
+    <div id="info">
+      <h1 class="text-7xl text-center font-bold">PROVIDER'S INFORMATION</h1>
+      <div id="details" class="p-52 text-center text-4xl">
+        <p>Provider's Name: {{ provider.name }}</p>
+        <p>Financial Identification Number: {{ provider.nif }}</p>
+        <p>Organization place: {{ provider.name }}</p>
+      </div>
+
+      <p></p>
+    </div>
+  </div>
+  <app-provider-phones [phones]="phones"></app-provider-phones>
+</div>

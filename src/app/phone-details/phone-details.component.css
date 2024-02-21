@@ -1,0 +1,14 @@
+#phoneDetail {
+  padding: 20px;
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-around;
+}
+
+#description {
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}

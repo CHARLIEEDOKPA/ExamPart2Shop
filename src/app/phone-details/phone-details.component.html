@@ -1,0 +1,16 @@
+<h1 class="text-7xl text-center font-bold">Phone Details</h1>
+
+
+    <div id="phoneDetail" *ngIf="phone$ | async as phone">
+        <div id="image" class="border-2">
+            <img width="600px" src="../../assets/img/mobile-phone-icon-logo-illustration-suitable-for-web-design-logo-application-free-vector.jpg" alt="">
+        </div>
+        <div id="description">
+            <h1 class="text-7xl text-center">{{phone.productName}} by {{phone.provider}}</h1>
+            <p class="pt-32 text-4xl text-center ">{{phone.description}}</p>
+            <div id="buttons" class="p-32">
+                <button (click)="addToCartShop(phone)" class="bg-red-400 text-4xl w-52">Buy</button>
+                <button [routerLink] = "['/provider',phone.provider]" class="bg-red-400 text-4xl w-52">View Provider</button>
+            </div>
+        </div>
+    </div>
